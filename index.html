@@ -1,48 +1,104 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Privacy Policy - My App</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="EthioStat Privacy Policy">
+  <title>EthioStat Privacy Policy</title>
+  <style>
+    :root {
+      color-scheme: light;
+    }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
+      line-height: 1.6;
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 40px 20px;
+      color: #222;
+      background: #fff;
+    }
+    h1 {
+      line-height: 1.2;
+      margin-bottom: 8px;
+    }
+    h2 {
+      margin-top: 32px;
+      line-height: 1.3;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 20px 0;
+      display: block;
+      overflow-x: auto;
+    }
+    th, td {
+      border: 1px solid #ddd;
+      padding: 10px;
+      text-align: left;
+      vertical-align: top;
+    }
+    th {
+      background: #f5f5f5;
+    }
+    code {
+      background: #f3f3f3;
+      padding: 2px 5px;
+      border-radius: 4px;
+    }
+    pre {
+      background: #f5f5f5;
+      padding: 12px;
+      overflow-x: auto;
+      border-radius: 6px;
+    }
+    hr {
+      border: 0;
+      border-top: 1px solid #ddd;
+      margin: 36px 0;
+    }
+    a {
+      color: inherit;
+    }
+  </style>
 </head>
 <body>
-    <h1>Privacy Policy</h1>
-
-    <p>Effective Date: September 17, 2026</p>
-
-    <p>
-        This Privacy Policy explains how My App collects, uses,
-        and protects information when you use our application.
-    </p>
-
-    <h2>Information We Collect</h2>
-    <p>
-        We may collect information necessary to provide and improve
-        the services offered by the app.
-    </p>
-
-    <h2>How We Use Information</h2>
-    <p>
-        We use collected information to provide, maintain, and
-        improve the app and its features.
-    </p>
-
-    <h2>Third-Party Services</h2>
-    <p>
-        Our app may use third-party services that may collect
-        information according to their own privacy policies.
-    </p>
-
-    <h2>Data Security</h2>
-    <p>
-        We take reasonable measures to protect information associated
-        with the app.
-    </p>
-
-    <h2>Contact Us</h2>
-    <p>
-        If you have questions about this Privacy Policy, contact us at:
-        your-email@example.com
-    </p>
+<h1>EthioStat Privacy Policy</h1>
+<p><strong>Effective Date:</strong> 2026-09-17</p>
+<p><strong>Last Updated:</strong> 2026-09-17</p>
+<h2>Overview</h2>
+<p>EthioStat (&quot;the App&quot;) is a personal finance and telecom asset management application designed for the Ethiopian market. The App is developed and maintained by EthioBalance Team.</p>
+<p><strong>EthioStat is a 100% offline application. We do not collect, transmit, store, or share any user data with any third party. All data processing occurs entirely on your device.</strong></p>
+<h2>Information We Access</h2>
+<p>The App accesses the following on-device data to provide its core functionality:</p>
+<table><thead><tr><th>Data Type</th><th>Purpose</th><th>Stored Where</th><th>Shared?</th></tr></thead><tbody><tr><td>SMS Messages</td><td>Parse financial transaction details from bank and Telebirr SMS messages</td><td>On-device Room database only</td><td>Never</td></tr><tr><td>SMS Sender Address</td><td>Identify which bank or telecom provider sent the message</td><td>On-device Room database only</td><td>Never</td></tr><tr><td>SMS Timestamp</td><td>Associate transactions with the correct date and time</td><td>On-device Room database only</td><td>Never</td></tr></tbody></table>
+<h2>Information We Do NOT Access</h2>
+<ul><li>**Contacts**: The App does not read your contacts</li><li>**Location**: The App does not access GPS, network location, or any location data</li><li>**Camera / Microphone**: The App does not access camera or microphone</li><li>**Phone Calls**: The App does not make or intercept phone calls</li><li>**Internet**: The App does not make network requests (no API calls, no analytics, no ads)</li><li>**Device Identifiers**: The App does not read IMEI, Android ID, or advertising ID</li><li>**Other Apps**: The App does not access data from other applications</li></ul>
+<h2>Data Storage</h2>
+<p>All parsed transaction data, telecom asset information, and user preferences are stored <strong>exclusively in a local Room database</strong> on your device at:</p>
+<pre><code></code></pre>
+<p> /data/data/com.ethiobalance.app/databases/ethio_balance_db</p>
+<pre><code></code></pre>
+<p>This data is protected by Android&#x27;s application sandbox and is not accessible to other applications.</p>
+<h2>Data Sharing</h2>
+<p><strong>We do not share any data with any third party.</strong> Specifically:</p>
+<ul><li>No data is sent to our servers (we have no servers)</li><li>No data is sent to analytics services</li><li>No data is sent to advertising networks</li><li>No data is sent to data brokers</li><li>No data is embedded in crash reports (we have no crash reporting)</li></ul>
+<h2>Data Retention</h2>
+<p>All data remains on your device until:</p>
+<ul><li>You uninstall the App (all data is deleted by Android)</li><li>You clear the App&#x27;s data via Android Settings</li><li>You manually remove transaction sources in the App</li></ul>
+<h2>User Rights</h2>
+<p>You have the right to:</p>
+<ul><li>**Access**: View all your data within the App at any time</li><li>**Delete**: Remove any or all data by clearing App data or uninstalling</li><li>**Control**: Choose which bank/telecom sources the App monitors</li></ul>
+<h2>Children&#x27;s Privacy</h2>
+<p>EthioStat is not directed at children under the age of 13. The App does not knowingly collect information from children.</p>
+<h2>Permissions Explained</h2>
+<table><thead><tr><th>Permission</th><th>Why We Need It</th><th>What Happens Without It</th></tr></thead><tbody><tr><td>`READ_SMS`</td><td>Read existing SMS messages from banks/Telebirr to parse financial transactions</td><td>The App cannot scan your SMS inbox for past transactions</td></tr><tr><td>`RECEIVE_SMS`</td><td>Detect new incoming SMS in real time to automatically log transactions</td><td>New transactions won&#x27;t be detected until you manually open the app</td></tr><tr><td>`POST_NOTIFICATIONS`</td><td>Show a persistent notification for the background SMS monitoring service</td><td>Background SMS detection won&#x27;t work on Android 13+</td></tr></tbody></table>
+<h2>Changes to This Policy</h2>
+<p>We may update this Privacy Policy from time to time. Changes will be posted within the App and on our website. Continued use of the App after changes constitutes acceptance.</p>
+<h2>Contact</h2>
+<p>For questions about this Privacy Policy, contact:</p>
+<ul><li>**Email**: kelo.labs.dev@gmail.com</li><li>**Developer**: EthioBalance Team</li></ul>
+<hr>
 </body>
 </html>
